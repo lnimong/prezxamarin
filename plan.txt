@@ -8,7 +8,8 @@ PREZ
  - d'un point de vue commercial/technique (1/2)
 -> comment ça marche (par l'exemple)
  - architecture (mono)
- - l'exemple (appli appelle ton cellenzan/Allo world)
+ - l'exemple (appli Allo world)
+-> questions ?
 
 KATA
 
@@ -17,3 +18,4 @@ KATA
 -> prix par geolocalisation
 
 -> prise de photo
+-> questions/apero ?
