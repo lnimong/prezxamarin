@@ -1,0 +1,9 @@
+c:\users\lionel\documents\visual studio 2013\Projects\AlloWorld\AlloWorld.Tests\bin\Debug\AlloWorld.Tests.dll.config
+c:\users\lionel\documents\visual studio 2013\Projects\AlloWorld\AlloWorld.Tests\bin\Debug\AlloWorld.Tests.dll
+c:\users\lionel\documents\visual studio 2013\Projects\AlloWorld\AlloWorld.Tests\bin\Debug\AlloWorld.Tests.pdb
+c:\users\lionel\documents\visual studio 2013\Projects\AlloWorld\AlloWorld.Tests\bin\Debug\nunit.framework.dll
+c:\users\lionel\documents\visual studio 2013\Projects\AlloWorld\AlloWorld.Tests\bin\Debug\TechTalk.SpecFlow.dll
+c:\users\lionel\documents\visual studio 2013\Projects\AlloWorld\AlloWorld.Tests\bin\Debug\nunit.framework.xml
+c:\users\lionel\documents\visual studio 2013\Projects\AlloWorld\AlloWorld.Tests\obj\Debug\AlloWorld.Tests.csprojResolveAssemblyReference.cache
+c:\users\lionel\documents\visual studio 2013\Projects\AlloWorld\AlloWorld.Tests\obj\Debug\AlloWorld.Tests.dll
+c:\users\lionel\documents\visual studio 2013\Projects\AlloWorld\AlloWorld.Tests\obj\Debug\AlloWorld.Tests.pdb

@@ -1,17 +1,29 @@
 PREZ
 
 -> qui sommes nous ? (1)
+	prez (très) rapide de qui nous sommes
 -> xamarin c'est quoi ?
  - topo sur developpement mobile (1)
+ 	on parle un peu de ce qui existe comme solutions (dev natif, appli web, hibride)
+ 	ce qui est utilisé en ce moment (phonegap, titanium) et brièvement comment ça fonctionne
  - particularité de xamarin (2)
+ 	où se situe xamarin dans tout ça 
+ 	et son fonctionnement
+ 	et en quoi il est difféent des autres solutions existantes
 -> quel intérêt ?
  - d'un point de vue commercial/technique (1/2)
+	qu'apporte xamarin par rapport à un titanium ou un phonegap ?
+	quels sont les intérêts de  xamarin ? (pour un dev, unbusiness) 
+	à qui ça s'adresse ?
 -> comment ça marche (par l'exemple)
  - architecture (mono)
+	explications/petits schémas sur comment ça marche et comment ça se code
  - l'exemple (appli Allo world)
+	appli basique AlloWorld servant à expliquer les bases du dev avec xamarin
+	à  la fin de cette partie  tout le monde devrait être capable de coder un truc basique avec xamarin
 -> questions ?
 
-KATA
+KATA (pour être honnêtes pas convaincu par cet exemple)
 
 -> afficher la liste des produits
 -> sélection des produits
