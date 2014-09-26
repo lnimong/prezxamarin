@@ -1,10 +1,11 @@
-﻿using AlloWorld.SharedCode;
+using AlloWorld.SharedCode;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Windows;
+using System.Windows.Input;
 
 namespace WP
 {
@@ -13,11 +14,13 @@ namespace WP
         public string Name { get; set; }
 
         public Thickness RandomMargin { get; set; }
+
+        public ICommand DialCommand { get; set; }
     }
 
     public class MainPageViewModel 
     {
-        DialerModel model = new DialerModel(null);
+        DialerModel model = new DialerModel(new DialService());
 
         public IEnumerable<Contact> ColumnOne
         {
@@ -27,12 +30,12 @@ namespace WP
                 return model.Contacts.Select(c => new Contact
                 {
                     Name = c,
-                    RandomMargin = new Thickness(random.Next(20,300),20,20,20)
-                    
+                    RandomMargin = new Thickness(random.Next(20, 300), 20, 20, 20),
+                    DialCommand = new Command(() => { model.Dial(c); }) 
                 });
             }
         }
 
 
     }
-}
+}                                                                                                                                                                                                                                                                                           

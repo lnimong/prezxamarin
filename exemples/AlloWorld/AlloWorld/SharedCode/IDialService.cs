@@ -8,6 +8,6 @@ namespace AlloWorld.SharedCode
 {
     public interface IDialService
     {
-        void Dial(string p);
+        void Dial(string name, string number);
     }
 }

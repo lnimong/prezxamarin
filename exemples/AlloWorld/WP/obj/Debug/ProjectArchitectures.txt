@@ -1,2 +1,2 @@
-c:\users\lionel\documents\visual studio 2013\Projects\AlloWorld\AlloWorld\AlloWorld.csproj;neutral
-c:\users\lionel\documents\visual studio 2013\Projects\AlloWorld\WP\WP.csproj;neutral
+C:\Users\lionel\documents\visual studio 2013\Projects\AlloWorld\AlloWorld\AlloWorld.csproj;neutral
+C:\Users\lionel\documents\visual studio 2013\Projects\AlloWorld\WP\WP.csproj;neutral

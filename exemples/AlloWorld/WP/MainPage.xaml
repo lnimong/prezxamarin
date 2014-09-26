@@ -28,7 +28,10 @@
             
             <ListBox.ItemTemplate>
                 <DataTemplate>
-                    <Border x:Name="ButtonBackground" 
+                    <Button Command="{Binding DialCommand}">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border x:Name="ButtonBackground" 
                                 BorderBrush="BlueViolet" 
                                 BorderThickness="2" 
                                 Background="BlueViolet" 
@@ -36,9 +39,14 @@
                                 CornerRadius="60" 
                                 Width="120"
                                 Height="120">
-                        <TextBlock TextAlignment="Center" VerticalAlignment="Center" Text="{Binding Name}" 
+                                    <TextBlock TextAlignment="Center" VerticalAlignment="Center" Text="{Binding Name}" 
                                    Foreground="White" Margin="20" />
-                    </Border>
+                                </Border>
+                            </ControlTemplate>
+
+                        </Button.Template>
+                    </Button>
+                    
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
