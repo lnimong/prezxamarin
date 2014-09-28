@@ -45,10 +45,13 @@ namespace Android
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int Icon = 2130837504;
+			public const int Circle = 2130837504;
 			
 			// aapt resource value: 0x7f020001
-			public const int monoandroidsplash = 2130837505;
+			public const int Icon = 2130837505;
+			
+			// aapt resource value: 0x7f020002
+			public const int monoandroidsplash = 2130837506;
 			
 			static Drawable()
 			{
@@ -64,16 +67,10 @@ namespace Android
 		{
 			
 			// aapt resource value: 0x7f060000
-			public const int MyButton0 = 2131099648;
+			public const int contactbutton = 2131099648;
 			
 			// aapt resource value: 0x7f060001
-			public const int MyButton1 = 2131099649;
-			
-			// aapt resource value: 0x7f060002
-			public const int MyButton2 = 2131099650;
-			
-			// aapt resource value: 0x7f060003
-			public const int MyButton3 = 2131099651;
+			public const int contactlist = 2131099649;
 			
 			static Id()
 			{
@@ -89,7 +86,10 @@ namespace Android
 		{
 			
 			// aapt resource value: 0x7f030000
-			public const int Main = 2130903040;
+			public const int Contact = 2130903040;
+			
+			// aapt resource value: 0x7f030001
+			public const int Main = 2130903041;
 			
 			static Layout()
 			{

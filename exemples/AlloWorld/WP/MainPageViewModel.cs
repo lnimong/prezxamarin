@@ -22,7 +22,7 @@ namespace WP
     {
         DialerModel model = new DialerModel(new DialService());
 
-        public IEnumerable<Contact> ColumnOne
+        public IEnumerable<Contact> Contacts
         {
             get
             {

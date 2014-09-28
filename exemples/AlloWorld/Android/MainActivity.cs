@@ -20,6 +20,9 @@ namespace Android
         {
             base.OnCreate(bundle);
 
+            RequestWindowFeature(WindowFeatures.NoTitle);
+            Window.AddFlags(WindowManagerFlags.Fullscreen);
+
             model = new DialerModel(new DialService (this));
 
             // Set our view from the "main" layout resource
@@ -29,17 +32,15 @@ namespace Android
             
             // Get our button from the layout resource,
             // and attach an event to it
-            Button button = FindViewById<Button>(Resource.Id.MyButton0);
+            ListView list = FindViewById<ListView>(Resource.Id.contactlist);
+            list.Adapter = new ContactListAdapter(
+                this,
+                Resource.Layout.Contact, 
+                model);
 
-            InitButton(button, model.Contacts.First(), model.Dial);
 
         }
 
-        private void InitButton(Button button, string buttonname, Action<string> call)
-        {
-            button.Text = buttonname;
-            button.Click += delegate { call(buttonname); };
-        }
     }
 }
 

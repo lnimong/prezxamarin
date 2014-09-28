@@ -24,7 +24,7 @@
             <TextBlock Text="phone" TextAlignment="Center" Margin="30,0,30,30" Foreground="White"/>
         </StackPanel>
 
-        <ListBox Grid.Row="1" ItemsSource="{Binding ColumnOne}">
+        <ListBox Grid.Row="1" ItemsSource="{Binding Contacts}">
             
             <ListBox.ItemTemplate>
                 <DataTemplate>
