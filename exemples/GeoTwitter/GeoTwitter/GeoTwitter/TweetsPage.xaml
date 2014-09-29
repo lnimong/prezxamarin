@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+					   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+					   x:Class="GeoTwitter.TweetsPage"
+                       Title="Tweets">
+	<ListView x:name="tweetsList"
+              ItemsSource="{Binding Tweets}">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <ViewCell.View>
+                        <StackLayout>
+                            <Label Text="{Binding Text}" />
+                            <Label Text="{Binding Date}" />
+                            <Label Text="{Binding User}" />
+                        </StackLayout>
+                    </ViewCell.View>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>
