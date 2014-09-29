@@ -31,3 +31,8 @@ KATA (pour être honnêtes pas convaincu par cet exemple)
 
 -> prise de photo
 -> questions/apero ?
+
+EXEMPLES UTILES :
+--------------
+https://github.com/aritchie/acr-xamarin-forms/tree/master/Acr.XamForms.Mobile/Media
+
