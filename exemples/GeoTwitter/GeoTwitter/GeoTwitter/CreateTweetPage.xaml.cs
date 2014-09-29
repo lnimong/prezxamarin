@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace GeoTwitter
 {
-    public partial class MainTabbedPage 
+    public partial class CreateTweetPage
     {
-        public MainTabbedPage()
+        public CreateTweetPage()
         {
             InitializeComponent();
-            BindingContext = new MainTabbedViewModel();
+            BindingContext = new CreateTweetViewModel();
         }
     }
 }

@@ -10,6 +10,9 @@ using GeoTwitter.WinPhone.Resources;
 
 namespace GeoTwitter.WinPhone
 {
+    using GeoTwitter.Tools;
+    using GeoTwitter.WinPhone.Tools;
+
     public partial class App : Application
     {
         /// <summary>
@@ -61,6 +64,7 @@ namespace GeoTwitter.WinPhone
         // This code will not execute when the application is reactivated
         private void Application_Launching(object sender, LaunchingEventArgs e)
         {
+            PositionManager.Current = new WinPhonePositionManager();
         }
 
         // Code to execute when the application is activated (brought to foreground)

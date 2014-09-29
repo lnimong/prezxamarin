@@ -1,7 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:GeoTwitter;assembly:GeoTwitter"
+    xmlns:local="clr-namespace:GeoTwitter;assembly=GeoTwitter"
 	x:Class="GeoTwitter.MainTabbedPage"
         Title="Static Tabs Sample">
-    </TabbedPage>
+  <local:TweetsPage></local:TweetsPage>
+  <local:CreateTweetPage></local:CreateTweetPage>
+</TabbedPage>

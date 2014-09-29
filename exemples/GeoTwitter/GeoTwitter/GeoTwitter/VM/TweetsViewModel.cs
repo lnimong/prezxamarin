@@ -9,26 +9,18 @@ namespace GeoTwitter.VM
 {
     public class TweetsViewModel
     {
+        private Repository repository;
+
+        public TweetsViewModel()
+        {
+            this.repository = new Repository();
+        }
+
         public IEnumerable<Tweet> Tweets
         {
             get
             {
-                return new Tweet[] { 
-                    new Tweet{
-                        Date = "hier",
-                        Text = "le troisième tweet",
-                        User = "moi"
-                    }, 
-                    new Tweet{
-                        Date = "hier",
-                        Text = "le deuxieme tweet",
-                        User = "moi"
-                    }, 
-                    new Tweet{
-                        Date = "hier",
-                        Text = "le promier tweet",
-                        User = "moi"
-                    }};
+                return this.repository.GetTweets();
             }
         }
     }

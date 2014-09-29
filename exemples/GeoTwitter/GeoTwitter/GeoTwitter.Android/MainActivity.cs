@@ -11,6 +11,9 @@ using Xamarin.Forms.Platform.Android;
 
 namespace GeoTwitter.Droid
 {
+    using GeoTwitter.Droid.Tools;
+    using GeoTwitter.Tools;
+
     [Activity(Label = "GeoTwitter", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : AndroidActivity
     {
@@ -19,6 +22,8 @@ namespace GeoTwitter.Droid
             base.OnCreate(bundle);
 
             Xamarin.Forms.Forms.Init(this, bundle);
+
+            PositionManager.Current = new AndroidPositionManager();
 
             SetPage(App.GetMainPage());
         }
