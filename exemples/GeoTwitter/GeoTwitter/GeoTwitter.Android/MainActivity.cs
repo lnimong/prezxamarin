@@ -23,8 +23,6 @@ namespace GeoTwitter.Droid
 
             Xamarin.Forms.Forms.Init(this, bundle);
 
-            PositionManager.Current = new AndroidPositionManager();
-
             SetPage(App.GetMainPage());
         }
     }

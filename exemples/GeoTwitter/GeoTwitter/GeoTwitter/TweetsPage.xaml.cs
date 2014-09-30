@@ -12,7 +12,6 @@ namespace GeoTwitter
         public TweetsPage()
         {
             InitializeComponent();
-            BindingContext = new TweetsViewModel();
         }
     }
 }

@@ -12,7 +12,6 @@ namespace GeoTwitter
         public MainTabbedPage()
         {
             InitializeComponent();
-            BindingContext = new MainTabbedViewModel();
         }
     }
 }

@@ -6,6 +6,8 @@ namespace GeoTwitter.Models
 
     using GeoTwitter.Tools;
 
+    using Xamarin.Forms;
+
     public class Repository
     {
         private static readonly List<Tweet> Tweets = new List<Tweet>
@@ -38,7 +40,7 @@ namespace GeoTwitter.Models
 
         public void Save(Tweet tweet)
         {
-            var position = PositionManager.Current.GetCurrentPosition();
+            var position = DependencyService.Get<IPositionManager>().GetCurrentPosition();
 
             if (position != null)
             {
