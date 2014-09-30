@@ -16,8 +16,15 @@ namespace GeoTwitter.WinPhone.Tools
         {
             var geo = new Geolocator();
 
+            var async = geo.GetGeopositionAsync().AsTask();
 
-            return null;
+            var result = Task.WhenAny(async);
+
+            return new Position()
+                       {
+                           Latitude = result.Result.Result.Coordinate.Latitude,
+                           Longitude = result.Result.Result.Coordinate.Longitude
+                       };
         }
     }
 }
