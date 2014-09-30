@@ -1,0 +1,29 @@
+Comment fonctionne xamarin ?
+--------------------------------
+
+http://developer.xamarin.com/guides/cross-platform/getting_started/introduction_to_mobile_development/
+(How Does Xamarin Work?)
+
+http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/part_1_-_understanding_the_xamarin_mobile_platform/
+
+http://developer.xamarin.com/guides/android/under_the_hood/architecture/
+
+
+
+comment s'execute le code xamarin ?
+--------------------------------------------
+http://xamarin.com/faq
+
+How does Xamarin run my C# code on Android?
+On Android, Xamarin ships a fully functional implementation of the .NET runtime, called Mono, bundled with your app so that your code executes with all of the power of C# and .NET, including JIT-compilation, memory management, reflection, and the .NET base class libraries. Developers can use any native features by interacting with .NET class libraries that provide one-to-one mappings to all of the native APIs on Android.
+How does Xamarin run my C# code on iOS?
+On iOS, Xamarin uses Mono, a fully functional implementation of the .NET runtime, to fully compile your app into a native ARM executable ahead of time (AOT) so that your code executes with all of the power of C# and .NET, including memory management, reflection, and the .NET base class libraries. Developers can use any native features by interacting with .NET class libraries that provide one-to-one mappings to all of the native APIs on iOS, while complying with Apple's security restrictions which prevent execution of dynamically generated code on device.
+
+
+pourquoi AOT sur IOS ?
+-----------------------------------
+https://www.safaribooksonline.com/library/view/xamarin-cross-platform-application/9781849698467/ch07s04.html
+
+http://stackoverflow.com/questions/5054732/is-it-prohibited-using-of-jitjust-in-time-compiled-code-in-ios-app-for-appstor
+
+https://code.google.com/p/v8/issues/detail?id=1312
