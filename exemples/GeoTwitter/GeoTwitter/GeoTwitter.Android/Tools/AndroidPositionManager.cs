@@ -13,17 +13,17 @@ namespace GeoTwitter.Droid.Tools
 
     public class AndroidPositionManager : IPositionManager
     {
-        public async Task<GeoTwitter.Tools.TwitterPosition> GetCurrentPosition()
+        public System.Threading.Tasks.Task<GeoTwitter.Tools.TwitterPosition> GetCurrentPosition()
         {
-            var geo = new Geolocator(Android.App.Application.Context);
+            return Task.Run(
+                        async () =>
+                            {
+                                var geo = new Geolocator(Android.App.Application.Context);
 
-            var result = await geo.GetPositionAsync(1000);
+                                var result = await geo.GetPositionAsync(1000);
 
-            return new TwitterPosition
-            {
-                Latitude = result.Latitude,
-                Longitude = result.Longitude
-            };
+                                return new TwitterPosition { Latitude = result.Latitude, Longitude = result.Longitude };
+                            });
         }
     }
 }
