@@ -13,6 +13,6 @@ namespace GeoTwitter.Models
         public string Text { get; set; }
         public string User { get; set; }
         public DateTime Date { get; set; }
-        public Position Position { get; set; }
+        public TwitterPosition TwitterPosition { get; set; }
     }
 }

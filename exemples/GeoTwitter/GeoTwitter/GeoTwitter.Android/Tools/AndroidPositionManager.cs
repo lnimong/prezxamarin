@@ -5,13 +5,25 @@ using System.Text;
 
 namespace GeoTwitter.Droid.Tools
 {
+    using System.Threading.Tasks;
+
     using GeoTwitter.Tools;
 
-    class AndroidPositionManager : IPositionManager
+    using Xamarin.Geolocation;
+
+    public class AndroidPositionManager : IPositionManager
     {
-        public Position GetCurrentPosition()
+        public async Task<GeoTwitter.Tools.TwitterPosition> GetCurrentPosition()
         {
-            return null;
+            var geo = new Geolocator(Android.App.Application.Context);
+
+            var result = await geo.GetPositionAsync(1000);
+
+            return new TwitterPosition
+            {
+                Latitude = result.Latitude,
+                Longitude = result.Longitude
+            };
         }
     }
 }

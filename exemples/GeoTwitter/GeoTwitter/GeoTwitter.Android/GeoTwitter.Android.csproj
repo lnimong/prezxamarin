@@ -24,7 +24,7 @@
     <JavaMaximumHeapSize />
     <JavaOptions />
     <AndroidUseLatestPlatformSdk />
-    <NuGetPackageImportStamp>6c410fda</NuGetPackageImportStamp>
+    <NuGetPackageImportStamp>26da689a</NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -70,6 +70,9 @@
     <Reference Include="Xamarin.Forms.Xaml">
       <HintPath>..\..\packages\Xamarin.Forms.1.2.2.6243\lib\MonoAndroid10\Xamarin.Forms.Xaml.dll</HintPath>
     </Reference>
+    <Reference Include="Xamarin.Mobile">
+      <HintPath>..\..\xamarin.mobile-0.7.4\lib\android\Xamarin.Mobile.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
@@ -90,6 +93,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GeoTwitter\GeoTwitter.csproj">
+      <Project>{14743962-f920-4c4d-9e2d-151d6b39108e}</Project>
       <Name>GeoTwitter</Name>
     </ProjectReference>
   </ItemGroup>

@@ -45,7 +45,7 @@
       <DependentUpon>CreateTweetPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Tools\IPositionManager.cs" />
-    <Compile Include="Tools\Position.cs" />
+    <Compile Include="Tools\TwitterPosition.cs" />
     <Compile Include="TweetsPage.xaml.cs">
       <DependentUpon>TweetsPage.xaml</DependentUpon>
     </Compile>

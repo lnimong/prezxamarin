@@ -1,7 +1,9 @@
 namespace GeoTwitter.Tools
 {
+    using System.Threading.Tasks;
+
     public interface IPositionManager
     {
-        Position GetCurrentPosition();
+        Task<TwitterPosition> GetCurrentPosition();
     }
 }

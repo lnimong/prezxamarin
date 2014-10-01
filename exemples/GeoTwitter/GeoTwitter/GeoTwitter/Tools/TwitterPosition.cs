@@ -1,6 +1,6 @@
 namespace GeoTwitter.Tools
 {
-    public class Position
+    public class TwitterPosition
     {
         public double Latitude { get; set; }
 

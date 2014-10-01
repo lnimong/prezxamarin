@@ -12,19 +12,17 @@ namespace GeoTwitter.WinPhone.Tools
 
     public class WinPhonePositionManager : IPositionManager
     {
-        public Position GetCurrentPosition()
+        public async Task<TwitterPosition> GetCurrentPosition()
         {
             var geo = new Geolocator();
 
-            var async = geo.GetGeopositionAsync().AsTask();
+            var result = await geo.GetGeopositionAsync();
 
-            var result = Task.WhenAny(async);
-
-            return new Position()
-                       {
-                           Latitude = result.Result.Result.Coordinate.Latitude,
-                           Longitude = result.Result.Result.Coordinate.Longitude
-                       };
+            return new TwitterPosition
+            {
+                Latitude = result.Coordinate.Latitude,
+                Longitude = result.Coordinate.Longitude
+            };
         }
     }
 }

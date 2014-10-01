@@ -38,13 +38,15 @@ namespace GeoTwitter.Models
             return Tweets;
         }
 
-        public void Save(Tweet tweet)
+        public async void Save(Tweet tweet)
         {
-            var position = DependencyService.Get<IPositionManager>().GetCurrentPosition();
+            var positionManager = DependencyService.Get<IPositionManager>();
+
+            var position = await positionManager.GetCurrentPosition();
 
             if (position != null)
             {
-                tweet.Position = position;
+                tweet.TwitterPosition = position;
             }
 
             Tweets.Add(tweet);
