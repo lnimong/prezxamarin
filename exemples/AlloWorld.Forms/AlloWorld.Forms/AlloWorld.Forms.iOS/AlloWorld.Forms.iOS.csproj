@@ -1,18 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\..\packages\xamstore-xamarin.mobile.0.7.1\build\monotouch\xamstore-xamarin.mobile.props" Condition="Exists('..\..\packages\xamstore-xamarin.mobile.0.7.1\build\monotouch\xamstore-xamarin.mobile.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{BD6CC07D-014A-4306-A5DE-6D85E037E8A1}</ProjectGuid>
+    <ProjectGuid>{2BA1CD66-0EB7-4B7B-8CBB-68C214DAB734}</ProjectGuid>
     <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Exe</OutputType>
-    <RootNamespace>GeoTwitter.iOS</RootNamespace>
+    <RootNamespace>AlloWorld.Forms.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
     <AssemblyName>FormsTemplateiOS</AssemblyName>
-    <NuGetPackageImportStamp>3667908c</NuGetPackageImportStamp>
+    <NuGetPackageImportStamp>ef65121d</NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
     <DebugSymbols>true</DebugSymbols>
@@ -83,8 +82,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\GeoTwitter\GeoTwitter.csproj">
-      <Name>GeoTwitter</Name>
+    <ProjectReference Include="..\AlloWorld.Forms\AlloWorld.Forms.csproj">
+      <Name>AlloWorld.Forms</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -103,17 +102,6 @@
     <Reference Include="Xamarin.Forms.Xaml">
       <HintPath>..\..\packages\Xamarin.Forms.1.2.2.6243\lib\MonoTouch10\Xamarin.Forms.Xaml.dll</HintPath>
     </Reference>
-    <Reference Include="Xamarin.Mobile">
-      <HintPath>..\..\Components\xamarin.mobile-0.7.1\lib\ios\Xamarin.Mobile.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />
-  <Import Project="..\..\packages\Xamarin.Forms.1.2.2.6243\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.1.2.2.6243\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10\Xamarin.Forms.targets')" />
-  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
-    <PropertyGroup>
-      <ErrorText>Ce projet fait référence à des packages NuGet qui sont manquants sur cet ordinateur. Activez l'option de restauration des packages NuGet pour les télécharger. Pour plus d'informations, consultez http://go.microsoft.com/fwlink/?LinkID=322105. Le fichier manquant est le suivant : {0}.</ErrorText>
-    </PropertyGroup>
-    <Error Condition="!Exists('..\..\packages\Xamarin.Forms.1.2.2.6243\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10\Xamarin.Forms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Xamarin.Forms.1.2.2.6243\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10\Xamarin.Forms.targets'))" />
-    <Error Condition="!Exists('..\..\packages\xamstore-xamarin.mobile.0.7.1\build\monotouch\xamstore-xamarin.mobile.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\xamstore-xamarin.mobile.0.7.1\build\monotouch\xamstore-xamarin.mobile.props'))" />
-  </Target>
 </Project>
