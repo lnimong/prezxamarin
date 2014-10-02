@@ -10,7 +10,7 @@
             {"Web", "0123456"},
             {"Alm", "0123456"},
             {"Mobile", "0123456"},
-            {"Autres", "0762004212"}
+            {"Autres", "0762004233"}
         };
 
         public DialerModel(IDialService dialService)
